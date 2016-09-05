@@ -11,6 +11,7 @@
 angular
   .module('upToApp', [
     'ui.bootstrap',
+    'ui.grid',
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -43,6 +44,11 @@ angular
         templateUrl: 'views/gallery.html',
         controller: 'GalleryCtrl',
         controllerAs: 'gallery'
+      })
+      .when('/donations', {
+        templateUrl: 'views/donations.html',
+        controller: 'DonationsCtrl',
+        controllerAs: 'donations'
       })
       .otherwise({
         redirectTo: '/'

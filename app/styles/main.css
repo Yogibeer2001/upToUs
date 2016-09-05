@@ -30,6 +30,10 @@ body {
 .thumbnails img{
   width:100%
 }
+.gridStyles{
+    width:20em;
+    height:100%;
+}
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
