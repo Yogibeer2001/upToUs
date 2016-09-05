@@ -3,7 +3,15 @@
 <div class="thumbnails">
    <div class="col-md-4" ng-repeat="pic in pictures">
       <img ng-src="{{pic.url}}">
+      <div ng-controller="RatingDemoCtrl">
+        <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" state-on="'glyphicon-heart'" state-off="'glyphicon-ban-circle'" aria-labelledby="default-rating">
+        </span>
+        <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">
+          {{percent}}%
+        </span>
+        <!-- <hr /> -->
+      </div>
       <h3>{{pic.title}}</h3>
       <p> {{pic.summary}}</p>
-   </div>
+  </div>
 </div>
