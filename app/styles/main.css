@@ -27,6 +27,9 @@ body {
   border-radius: 1em;
 
 }
+.thumbnails img{
+  width:100%
+}
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

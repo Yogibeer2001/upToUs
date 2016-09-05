@@ -1,7 +1,7 @@
 <div ng-controller="MainCtrl">
   <div class="hero-unit">
     <div class="headline">
-      <h1>Welcome to "Up To Us</h1><h5>&#xa9</h5><h1>"</h1>
+      <h1>Welcome to "Up To Us</h1><h5>&#xa9;</h5><h1>"</h1>
 
     </div>
 
@@ -45,7 +45,7 @@
 </div> -->
 
 <div class="row marketing row-fluid col-md-4" ng-repeat="block in content">
-           <img ng-src="{{block.img}}">
+           <img class="img-circle" ng-src="{{block.img}}">
            <h3>{{block.title}}</h3>
            <p>{{block.summary}} </p>
 </div>

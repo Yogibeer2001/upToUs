@@ -57,7 +57,7 @@ angular.module('upToApp')
       }
       return array;
     }
-    
+
     $scope.content=[
         {
            img:baseURL+'people',
@@ -65,15 +65,15 @@ angular.module('upToApp')
            summary:'We are good, we are the best out there'
         },
         {
-           img:baseURL+'business',
+           img:baseURL+'nature',
            title:'Our Services',
            summary:'We offer advice on staying Healthly, what to eat...what are the best exercises for you etc.'
         },
         {
 
-           img:baseURL+'transport',
+           img:baseURL+'nature',
            title:'Contact Us',
            summary:'#111, Good Health Blvd, Happy Place, Antartica, Zip-432167'
         }
-        ]
+      ];
   }]);

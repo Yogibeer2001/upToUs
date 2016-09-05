@@ -1,0 +1,20 @@
+<p>This is the articles view.</p>
+<!-- <h1>Articles</h1>
+<uib-accordion ng-controller="ArticlesCtrl">
+   <uib-accordion-group heading=" {{post.title}}" ng-repeat="post in posts">
+         {{post.content}}
+   </uib-accordion-group>
+</uib-accordion> -->
+<div ng-controller="AccordionCtrl">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="oneAtATime">
+      Open only one at a time
+    </label>
+  </div>
+  <uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups" >
+      {{group.content}}
+    </div>
+  </uib-accordion>
+</div>
