@@ -6,8 +6,28 @@
 }
 
 body {
-  padding: 0;
+  padding: 3.5em 0 0 0;
 }
+.headline {
+  text-align: center;
+  display:flex;
+  align-items: center;
+  width: 100%;
+}
+.hero-unit {
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 2em;
+    background-color: #eee;
+    border-radius: 1em;
+    padding: 3em;
+}
+.carousel-image{
+  width: 100%;
+  border-radius: 1em;
+
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -71,6 +91,11 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
+    display: table-cell;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+
   }
   /* Space out the masthead */
   .header {
